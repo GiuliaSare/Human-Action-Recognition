@@ -20,42 +20,6 @@ This project represents an initial attempt, acknowledging that the results obtai
 
 The **HMDB51 dataset** includes a diverse range of human actions. Each action category consists of multiple video clips showcasing different instances of the action being performed. For more details, visit the [HMDB51 dataset page](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/).
 
-### Project Structure
-
-#### Data Loading and Visualization
-
-The dataset was downloaded manually and decompressed. We created a copy of the directory containing the videos and removed all videos from that copy that did not belong to the seven classes of interest.
-
-#### Dataset Preprocessing
-
-We performed several preprocessing steps:
-
-- Extracting and resizing frames from the videos.
-- Normalizing the frames to have pixel values in the range [0, 1].
-- Ensuring each video has a consistent number of frames.
-
-#### Model Development
-
-##### 3D CNN Approach
-
-We implemented a **3D Convolutional Neural Network (CNN)** to process the spatiotemporal data from the video frames. The architecture includes multiple convolutional layers followed by max-pooling and dropout layers, a flattening layer, and dense layers.
-
-##### LRCN Approach
-
-We also implemented a **Long-term Recurrent Convolutional Network (LRCN)** which combines CNN and LSTM layers. The CNN layers extract spatial features from the frames, and the LSTM layers handle the temporal sequence modeling.
-
-### Evaluation
-
-We evaluated the trained models using **accuracy** and **loss** metrics. Due to computational constraints, we focused on achieving a balanced and well-structured approach rather than optimizing for maximum performance.
-
-### Results
-
-The models were able to classify the seven actions with varying degrees of accuracy. We provide visualizations of the training and validation loss and accuracy, as well as confusion matrices to illustrate the performance.
-
-### Conclusion
-
-This project demonstrates the process of developing neural networks for video classification under computational constraints. While the models achieved reasonable performance, there is room for improvement with more computational resources and further experimentation.
-
 ### References
 
 - [HMDB: A Large Human Motion Database](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/)
