@@ -6,13 +6,13 @@ The project was developed by **Sara Nava** and **Giulia Saresini**. Its aim is t
 
 The goal of this project is to build a robust neural network model for human action recognition. The model will be trained to classify videos into one of seven predefined human actions: **kick**, **sword**, **kiss**, **hug**, **shake_hands**, **fencing**, **punch**. The HMDB51 dataset contains videos showcasing various human actions, and this project focuses on a subset of these actions.
 
-### Key Objectives
+### Approach
 
 - **Data Preparation**: Preprocess the video data to extract relevant frames and normalize them for training models.
 - **Model Development**: Design and train **3D CNN** and **LRCN** architectures suitable for video classification tasks.
 - **Evaluation**: Assess the performance of the trained models using metrics such as accuracy and loss.
 
-### Challenges
+### Objective
 
 This project represents an initial attempt, acknowledging that the results obtained may not represent the optimal performance achievable. Due to **computational constraints** on our machines, we were limited in experimenting with a smaller number of parameters and simpler models, as more complex models caused kernel crashes. This is why we focused on classifying only 7 out of the 51 action classes available in the HMDB51 dataset. Our goal was not to surpass existing benchmarks but to present a logically structured approach that reflects thoughtful decisions made under these constraints.
 
